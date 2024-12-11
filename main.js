@@ -13,11 +13,40 @@ console.log(SOCBook);
 // Task 1
 // Complete the function so it returns Liz Rios' favourite fruit
 
-function lizRiosFavFruit() {
-  // Your code goes here...
-}
 
-console.log("Liz Rios' favourite fruit is:", lizRiosFavFruit());
+
+function getAllPeople () {
+  const people = SOCBook.data.people; //attempting to access the people array
+  people.forEach(function(person) { //the .forEach() method loops through the people array and prints out each person's name
+    console.log(person.name); //printing the name property for each person
+  })
+  }
+  getAllPeople ();
+
+  function allFavFruits () {
+    const favFruit = SOCBook.data.people.favoriteFruit; //to try get a list of all the fruits and copying the example like above?
+    favFruit.forEach(function(favoriteFruit) {
+      console.log(favFruit.favoriteFruit);
+    })
+  }
+  allFavFruits ();
+  
+
+  function lizRiosFavFruit() {
+  }
+  lizRiosFavFruit ();
+
+
+//there is a people array
+//confirm Liz Rios name, extract all of the people in SOCBook
+//check the property name for their favourite fruit - favoriteFruit
+//now that i have confirmed their name and the property name for favoriteFruit, I need to display this but I don't know how to link it
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+// TO UNDO console.log("Liz Rios' favourite fruit is:", lizRiosFavFruit());
 
 // Task 2
 // Complete the function so it returns Marie David's 2nd friend's name
@@ -26,7 +55,7 @@ function marieDavid2ndFriend() {
   // Your code goes here...
 }
 
-console.log("Marie David's 2nd friend is:", marieDavid2ndFriend());
+// TO UNDO console.log("Marie David's 2nd friend is:", marieDavid2ndFriend());
 
 // Task 3
 // Complete the function so Cooper Brady's greeting message is shown in the p tag with the id of "message"
@@ -54,7 +83,7 @@ function findPersonByEmail(email) {
 }
 
 const found = findPersonByEmail("carversalinas@comtent.com");
-console.log("What I found:", found);
+// TO UNDO console.log("What I found:", found);
 
 // Task 5
 // Make a list containing only the people's names who's favourite fruit is a mango
@@ -67,7 +96,7 @@ function getMangoLovers() {
   return mangoLovers;
 }
 
-console.log("Who loves mango?", getMangoLovers());
+// TO UNDO console.log("Who loves mango?", getMangoLovers());
 
 // Task 6
 // Complete the function. Try and return the address of the person in the position in the array we've been handed
@@ -76,7 +105,7 @@ function getAddress(positionInArray) {
   // Your code goes here...
 }
 
-console.log(getAddress(0));
+// TO UNDO console.log(getAddress(0));
 
 // Task 7
 // Show a profile for each person in the ul with id "profiles"
