@@ -58,10 +58,16 @@ console.log(cooperBradyGreeting());
 
 function findPersonByEmail(email) {
   // Your code goes in here...
+   const person = SOCBook.data.people.find(function(p) { //the .find() method is used to search through an array and return the first element that satisfies a given condition
+    return p.email === email; //function(p) is the callback function, p just represents the current element of the array being processed
+    //i am checking if the email property of the current person matches the email parameter passed to the findPersonByEmail function, if the condition is true, find() will treturn the person object that matches the email
+   });
+   return person || null; //return the person if found, otherwise return null
 }
 
 const found = findPersonByEmail("carversalinas@comtent.com");
-// TO UNDO console.log("What I found:", found);
+console.log("What I found:", found);
+
 
 // Task 5
 // Make a list containing only the people's names who's favourite fruit is a mango
